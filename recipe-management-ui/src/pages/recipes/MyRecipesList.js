@@ -18,8 +18,8 @@ import api from "../../api/api";
 import { useAuth } from "../../contexts/AuthContext";
 
 const MyRecipesList = () => {
-  const navigate = useNavigate();
-  const [recipes, setRecipes] = useState([]);
+   const navigate = useNavigate();
+  const [recipes, setRecipes] = useState([]); 
   const { user } = useAuth();
 
   useEffect(() => {
